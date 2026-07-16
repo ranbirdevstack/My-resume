@@ -1,0 +1,210 @@
+/* Light variables default */
+:root {
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --sub-text: #666666;
+    --link-color: #0066cc;
+    --border-color: #dddddd;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode variables override */
+body.dark-theme {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --sub-text: #aaaaaa;
+    --link-color: #4da3ff;
+    --border-color: #333333;
+    --nav-bg: rgba(30, 30, 30, 0.95);
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid var(--border-color);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--link-color);
+}
+
+/* Dark Mode Button inside Nav */
+.toggle-btn {
+    padding: 4px 8px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: var(--border-color);
+}
+
+/* Page Spacing Adjustment */
+.main-wrapper {
+    padding: 100px 20px 40px 20px; /* Top padding stops content from hiding under the fixed navbar */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 40px;
+    box-shadow: 0 0 10px var(--shadow);
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 25px;
+    scroll-margin-top: 90px; /* Prevents section headers from getting blocked by fixed navbar */
+}
+
+h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.skills-grid p {
+    margin: 4px 0;
+}
+
+.project, .job, .edu-item {
+    margin-bottom: 15px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-tech {
+    font-style: italic;
+    color: var(--sub-text);
+    margin-bottom: 5px;
+}
+
+ul {
+    margin: 5px 0 0 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.spacing-top {
+    margin-top: 10px;
+}
+
+/* Basic Mobile Optimization */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .main-wrapper {
+        padding-top: 150px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .item-header {
+        flex-direction: column;
+    }
+}
