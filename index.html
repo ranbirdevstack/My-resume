@@ -3,64 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Ranbir Pratap Singh Bhatia - Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>This is my cv</h1>
-        <nav>
-            <a href="#Education">Education</a>
-            <a href="#Technology">Technology</a>
-            <a href="#Achievements">Achievements</a>
-        </nav>
-    </header>
-    <main>
-        <p><b>Name :</b> Ranbir Pratap Singh Bhatia</p>
-        <p><b>Email :</b> ranbirpratapsinghbhatia@gmail.com</p>
-        <p><b>Phone no :</b> 8787262194</p>
-        <section id="Education">
-            <h1>Education: -</h1>
-         <ul>
-         <li> Bachelor of  Computer Applications (BCA)| Veer Bahadur Singh Purvanchal
-         University (2024-2027)</li>    
-         <li>Class XII (Senior Secondary)–2023 | Percentage: 69.7% </li>     
-         <li>Class X (Secondary)- 2021 | Percentage: 80.67% </li> 
-         </ul>
 
-        </section>
-        <section id="Technology">
-            <h1>Technology: -</h1>
-            <ul>
-            <li>Programming Languages: Java, C, C++, HTML </li>
-            <li>Concepts: OOPs, Basic Data Structures </li>
-            <li>Tools: Visual Studio Code</li> 
-            </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">RPSB</span>
+            <div class="nav-menu">
+                <a href="#summary" class="nav-link">Summary</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#internship" class="nav-link">Internship</a>
+                <a href="#education" class="nav-link">Education</a>
+                <button id="theme-toggle" class="toggle-btn" aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </div>
+    </nav>
 
-        
-         </section>
-        <section id="Achievements">
-            <h1>Achievements: -</h1>
-            <ul>
-           <li>Secured 4 star rating in Java and C on HackerRank</li>  
-           <li>Participated in IBM PBEL Virtual Internship Program (Web, Mobile Development & Marketing) 2025</li>  
-            </ul>
-        </section>
-        <article>
-            <p>Strengths: - <br>
-          Quick learner and disciplined</p>
-        </article>
-        <aside>
-            I known hindi and english
+    <!-- Main Content Wrapper (shifted down to account for fixed navbar) -->
+    <div class="main-wrapper">
+        <div class="container">
+            <header>
+                <h1>Ranbir Pratap Singh Bhatia</h1>
+                <div class="contact-info">
+                    Varanasi, Uttar Pradesh, India | +91-8787262194 | 
+                    <a href="mailto:ranbirpratapsinghbhatia@gmail.com">ranbirpratapsinghbhatia@gmail.com</a> <br>
+                    LinkedIn: <a href="https://linkedin.com" target="_blank">://linkedin.com</a> | 
+                    GitHub: <a href="https://github.com" target="_blank">://github.com</a>
+                </div>
+            </header>
 
-        </aside>
-    </main>
-    <footer>
-        <h2>Contact me</h2>
-        <form action="/contact">
-        <label for="email">email</label>
-        <input type="text"id= "email" placeholder="email"> <br>
-        <input type="submit">
-    </form>
-    </footer>
+            <section id="summary">
+                <h2>Professional Summary</h2>
+                <p>Results-driven aspiring Software Engineer with a strong foundation in full-stack web development and computer applications. Skilled in Java, C, JavaScript, and the MERN Stack, with a passion for building responsive web applications and solving real-world problems through technology.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <p><strong>Languages:</strong> Java, C, JavaScript</p>
+                    <p><strong>Web Technologies:</strong> HTML, CSS, Bootstrap, React.js, Node.js, Express.js</p>
+                    <p><strong>Databases:</strong> MongoDB, MySQL</p>
+                    <p><strong>Tools:</strong> Git, GitHub, VS Code, Google Workspace (App Script, Sites)</p>
+                    <p><strong>Concepts:</strong> Data Structures & Algorithms, API Integration, Authentication & Authorization, Full-Stack Development</p>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                
+                <div class="project">
+                    <div class="item-header">
+                        <span>World Explorer</span>
+                    </div>
+                    <div class="item-tech">MongoDB, Express.js, Ejs, Node.js</div>
+                    <ul>
+                        <li>Developed a full-stack travel listing platform featuring 32+ destination listings.</li>
+                        <li>Implemented CRUD operations, user authentication, and role-based access control.</li>
+                        <li>Designed responsive interfaces and integrated RESTful APIs for seamless functionality.</li>
+                        <li>Achieved 99% responsive layout across mobile, tablet, and desktop using Bootstrap and custom CSS.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="item-header">
+                        <span>Skyvora</span>
+                    </div>
+                    <div class="item-tech">React.js, OpenWeatherMap API</div>
+                    <ul>
+                        <li>Built a real-time weather forecasting application using React.js and external APIs.</li>
+                        <li>Displayed live weather details including temperature, humidity, wind speed, and conditions.</li>
+                        <li>Developed a responsive user interface for consistent performance across devices.</li>
+                        <li>Tested response interface across 5+ major cities for consistent cross platform performance.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="internship">
+                <h2>Internship</h2>
+                <div class="job">
+                    <div class="item-header">
+                        <span>IBM Skills Network – Web & Mobile Development Virtual Internship</span>
+                        <span>Sep 2025 – Nov 2025</span>
+                    </div>
+                    <ul>
+                        <li>Completed structured training in web and mobile development.</li>
+                        <li>Gained exposure to modern software development workflows and industry practices.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                
+                <div class="edu-item">
+                    <div class="item-header">
+                        <span>Bachelor of Computer Applications (BCA)</span>
+                        <span>2024 – 2027</span>
+                    </div>
+                    <div>Microtek College of Management and Technology</div>
+                </div>
+
+                <div class="edu-item spacing-top">
+                    <div class="item-header">
+                        <span>Class X & XII</span>
+                        <span>2021 & 2023</span>
+                    </div>
+                    <div>St. John's BLW</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Achievements & Extracurriculars</h2>
+                <ul>
+                    <li>Participated in Internal Hackathon 2024 and 2025.</li>
+                    <li>Developed and deployed full-stack web applications.</li>
+                    <li>Completed IBM Virtual Internship certification in Web & Mobile Development (Nov 2025).</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
