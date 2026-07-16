@@ -162,6 +162,7 @@ h2 {
 }
 
 .item-header {
+    text-decoration:none;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
